@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Kisan Mitra | Smart Farming Assistant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- External JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon" aria-hidden="true">🌾</span>
+                <span class="logo-text">AI Kisan Mitra</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#login" class="btn btn-secondary" id="login-nav-btn">Login</a>
+                <a href="#ask-ai" class="btn btn-primary" id="get-started-nav-btn">Get Started</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 3. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge hero-badge">
+                        <span class="badge-icon" aria-hidden="true">🌱</span>
+                        <span class="badge-text">AI-Powered Farming Assistant</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Smart Farming. Better Decisions. Better Harvests.</h1>
+                    
+                    <p class="hero-description">
+                        AI Kisan Mitra helps farmers understand crop problems and make smarter farming decisions using Artificial Intelligence.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#ask-ai" class="btn btn-primary btn-hero" id="hero-get-started-btn">Get Started</a>
+                        <a href="#features" class="btn btn-secondary btn-hero" id="hero-explore-features-btn">Explore Features</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-area">
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Indian farmer working in a green agricultural field" 
+                             class="hero-image" 
+                             width="1200" 
+                             height="800">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURES SECTION -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Everything a Farmer Needs</h2>
+                    <p class="section-subtitle">Simple AI-powered assistance for everyday farming decisions.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <article class="feature-card feature-crop-health">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">🌱</span>
+                        </div>
+                        <h3 class="feature-title">Crop Health</h3>
+                        <p class="feature-description">
+                            Identify possible crop diseases and understand crop health problems using AI.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-crop-health">Learn More</a>
+                    </article>
+
+                    <!-- Feature Card 2 -->
+                    <article class="feature-card feature-weather-advisor">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">🌦️</span>
+                        </div>
+                        <h3 class="feature-title">Weather Advisor</h3>
+                        <p class="feature-description">
+                            Get farming recommendations based on current and upcoming weather conditions.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-weather">Learn More</a>
+                    </article>
+
+                    <!-- Feature Card 3 -->
+                    <article class="feature-card feature-smart-irrigation">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">💧</span>
+                        </div>
+                        <h3 class="feature-title">Smart Irrigation</h3>
+                        <p class="feature-description">
+                            Get guidance about when your crops may need irrigation.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-irrigation">Learn More</a>
+                    </article>
+
+                    <!-- Feature Card 4 -->
+                    <article class="feature-card feature-pest-assistant">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">🐛</span>
+                        </div>
+                        <h3 class="feature-title">Pest Assistant</h3>
+                        <p class="feature-description">
+                            Understand possible pest problems affecting your crops.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-pest">Learn More</a>
+                    </article>
+
+                    <!-- Feature Card 5 -->
+                    <article class="feature-card feature-market-assistant">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">💰</span>
+                        </div>
+                        <h3 class="feature-title">Market Assistant</h3>
+                        <p class="feature-description">
+                            Get useful information about crop markets and available prices.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-market">Learn More</a>
+                    </article>
+
+                    <!-- Feature Card 6 -->
+                    <article class="feature-card feature-government-schemes">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon" aria-hidden="true">🧾</span>
+                        </div>
+                        <h3 class="feature-title">Government Schemes</h3>
+                        <p class="feature-description">
+                            Discover agricultural schemes and understand their eligibility requirements.
+                        </p>
+                        <a href="#ask-ai" class="btn btn-card feature-action-btn" id="btn-feature-schemes">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HOW IT WORKS SECTION -->
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">How AI Kisan Mitra Works</h2>
+                    <p class="section-subtitle">Get useful farming guidance in four simple steps.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <article class="step-card step-card-1">
+                        <div class="step-badge">
+                            <span class="step-number">01</span>
+                        </div>
+                        <h3 class="step-title">Tell Us Your Problem</h3>
+                        <p class="step-description">
+                            Enter your farming problem using text, voice or a crop photo.
+                        </p>
+                    </article>
+
+                    <!-- Step 2 -->
+                    <article class="step-card step-card-2">
+                        <div class="step-badge">
+                            <span class="step-number">02</span>
+                        </div>
+                        <h3 class="step-title">AI Understands</h3>
+                        <p class="step-description">
+                            AI analyzes the information provided by the farmer.
+                        </p>
+                    </article>
+
+                    <!-- Step 3 -->
+                    <article class="step-card step-card-3">
+                        <div class="step-badge">
+                            <span class="step-number">03</span>
+                        </div>
+                        <h3 class="step-title">Get Guidance</h3>
+                        <p class="step-description">
+                            The system provides simple and understandable recommendations.
+                        </p>
+                    </article>
+
+                    <!-- Step 4 -->
+                    <article class="step-card step-card-4">
+                        <div class="step-badge">
+                            <span class="step-number">04</span>
+                        </div>
+                        <h3 class="step-title">Take Action</h3>
+                        <p class="step-description">
+                            Follow the suggested next steps for your farm.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ASK AI SECTION -->
+        <section id="ask-ai" class="ask-ai-section">
+            <div class="container">
+                <div class="ask-ai-card">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Have a Farming Problem?</h2>
+                        <p class="section-subtitle">Ask AI Kisan Mitra and get simple, easy-to-understand farming guidance.</p>
+                    </div>
+
+                    <form id="ai-query-form" class="ai-query-form">
+                        <div class="form-group">
+                            <label for="farming-problem-input" class="sr-only">Describe your farming problem</label>
+                            <textarea id="farming-problem-input" 
+                                      name="farming_problem"
+                                      class="form-textarea" 
+                                      placeholder="Describe your farming problem... (e.g., My wheat leaves are turning yellow. What should I do?)" 
+                                      rows="5" 
+                                      required></textarea>
+                        </div>
+
+                        <div class="form-controls">
+                            <div class="input-media-actions">
+                                <button type="button" id="voice-input-btn" class="btn btn-utility voice-btn">
+                                    <span class="btn-icon" aria-hidden="true">🎙️</span>
+                                    <span>Voice Input</span>
+                                </button>
+                                
+                                <label for="photo-upload-input" class="btn btn-utility photo-upload-label" id="upload-photo-btn">
+                                    <span class="btn-icon" aria-hidden="true">📷</span>
+                                    <span>Upload Crop Photo</span>
+                                </label>
+                                <input type="file" id="photo-upload-input" name="crop_photo" accept="image/*" class="file-input-hidden">
+                            </div>
+
+                            <button type="submit" id="submit-ai-btn" class="btn btn-primary btn-submit">
+                                <span>Ask AI</span>
+                                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Empty result container -->
+                    <div id="ai-response" class="ai-response-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content text-center">
+                    <h2 class="section-title">Technology for Smarter Farming</h2>
+                    <p class="about-description">
+                        AI Kisan Mitra is designed to make modern agricultural information easier to understand and accessible to farmers through Artificial Intelligence.
+                    </p>
+
+                    <div class="about-points-grid">
+                        <div class="about-point-card">
+                            <div class="about-point-icon" aria-hidden="true">🌱</div>
+                            <h3 class="about-point-title">Smarter Farming Decisions</h3>
+                        </div>
+
+                        <div class="about-point-card">
+                            <div class="about-point-icon" aria-hidden="true">💧</div>
+                            <h3 class="about-point-title">Better Resource Management</h3>
+                        </div>
+
+                        <div class="about-point-card">
+                            <div class="about-point-icon" aria-hidden="true">🤝</div>
+                            <h3 class="about-point-title">Farmer-Friendly Technology</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FINAL CTA SECTION -->
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta-card text-center">
+                    <h2 class="cta-title">Your Farm. Your Questions. Your AI Assistant.</h2>
+                    <p class="cta-description">Start your journey toward smarter and more informed farming decisions.</p>
+                    <a href="#ask-ai" class="btn btn-primary btn-large" id="final-cta-btn">
+                        <span>Get Started</span>
+                        <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand-column">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon" aria-hidden="true">🌾</span>
+                        <span class="logo-text">AI Kisan Mitra</span>
+                    </a>
+                    <p class="footer-description">
+                        AI-powered assistance for smarter and more informed farming.
+                    </p>
+                </div>
+
+                <div class="footer-links-column">
+                    <ul class="footer-nav-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="copyright">&copy; 2026 AI Kisan Mitra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
